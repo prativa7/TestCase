@@ -33,11 +33,11 @@ Result:  Verified stat data displayed on following JSON format {"TotalRequests":
 #### Test Cases 5 : Validate application return correct JSON total hash request  
 Status : Pass
 
-Scenario Tested:  Ran http://127.0.0.1:8088/hash two times got the job ID as  1 and 2. Ran http://127.0.0.1:8088/stats    
+Scenario Tested:  Ran url -X POST -H "application/json -d{"\password\":"\angrymon\"}"http://127.0.0.1:8088/hash two times got the job ID as  1 and 2. Ran http://127.0.0.1:8088/stats    
    
 Result: The application gave correct total hash request since the server started.The result displayed as follow {"TotalRequests":2,"AverageTime":}  
 
-Scenario Tested: Closed the application and ran  http://127.0.0.1:8088/hash one time got the job ID as 1.
+Scenario Tested: Closed the application and ran curl -X POST -H "application/json -d{"\password\":"\angrymon\"}"http://127.0.0.1:8088/hash one time got the job ID as 1.    
 Again ran http://127.0.0.1:8088/stats    
 
 Result: Verified result displayed as follow {"TotalRequests":1,"AverageTime":}    
