@@ -111,7 +111,7 @@ public page AddPassword(string password)
        {
            
            var password  = Driver.FindElement(By.XPath("//input[@id='pasword']"));
-           password.SendKeys("angrymonkee");
+           password.SendKeys("angrymon");
            return this;
        }
 
