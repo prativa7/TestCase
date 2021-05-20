@@ -103,15 +103,6 @@ To test multiple connection simultaneously (load testing) we can use Apache Jmet
 5. Run the Test
 ```
 
-
-
-## Assert shutdown message displays  
-```C#
-Testdata.cs
-
-```
-
-
 ## Testing adding data
 ```C#
 This is for UI part for entering password
