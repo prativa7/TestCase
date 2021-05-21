@@ -49,7 +49,7 @@ Scenario Tested:  Opened exe file.
 Ran curl -X POST -H "application/json -d{"\password\":"\angrymon\"}"http://127.0.0.1:8088/hash    
 Ran curl http://127.0.0.1:8088/stats    
    
-Result: The system displayed average time 77400, the average time should around 54400.
+Result: The system displayed average time  0 or 77400, the average time should around 54400.
 
 
 
