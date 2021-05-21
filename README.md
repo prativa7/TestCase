@@ -1,5 +1,12 @@
 # Assignment  
-Language Used: C#
+Language Used: C#  
+
+Test Coverage:  
+Functional Testing  
+
+Load Testing  
+
+UI Testing 
 # Test Cases
  
 #### Test Case 1  : Validate command line should return a job identifier immediately.    
@@ -54,7 +61,7 @@ Scenario Tested:  Opened exe file.
 Ran curl -X POST -H "application/json -d{"\password\":"\angrymon\"}"http://127.0.0.1:8088/hash    
 Again ran curl http://127.0.0.1:8088/stats
  
-Result: The system displayed wrong average time as 0 or 447100, the average time should around 54400.
+Result: The system displayed wrong average time as 0 or 447100, the average time should  be around 54400.
 
 
 
