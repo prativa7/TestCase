@@ -1,5 +1,5 @@
 # Assignment  
-
+Language Used: C#
 # Test Cases
  
 #### Test Case 1  : Validate command line should return a job identifier immediately.    
@@ -18,7 +18,7 @@ Secnario Tested : Added non existing job ID on curl -H "application/json" http:/
 Result: Verified GET did not accept the '50b' job ID and prompted a error "Hash not found".
                                  
 
-#### Test Case 3 :  Validate the  correct base64 encoded password for sha-512  password hash displays    
+#### Test Case 3 :  Validate the correct base64 encoded password for sha-512  password hash displays    
 Status : Fail  
 Result: Applcation did not return correct base64 encoded password for corresponding SHA-512 hash.
 
@@ -34,12 +34,12 @@ Result:  Verified stat data displayed on following JSON format {"TotalRequests":
 #### Test Cases 5 : Validate application return correct JSON total hash request  
 Status : Pass
 
-Scenario Tested:  Ran url -X POST -H "application/json -d{"\password\":"\angrymon\"}"http://127.0.0.1:8088/hash two times got the job ID as  1 and 2. Ran http://127.0.0.1:8088/stats    
+Scenario Tested:  Ran url -X POST -H "application/json -d{"\password\":"\angrymon\"}"http://127.0.0.1:8088/hash two times got the job ID as  1 and 2. Ran curl -H "application/json" http://127.0.0.1:8088/stats.    
    
 Result: The application gave correct total hash request since the server started.The result displayed as follow {"TotalRequests":2,"AverageTime":}  
 
 Scenario Tested: Closed the application and ran curl -X POST -H "application/json -d{"\password\":"\angrymon\"}"http://127.0.0.1:8088/hash one time got the job ID as 1.    
-Again ran http://127.0.0.1:8088/stats    
+Again ran curl -H "application/json" http://127.0.0.1:8088/stats   
 
 Result: Verified result displayed as follow {"TotalRequests":1,"AverageTime":}    
 
@@ -57,7 +57,7 @@ Result: The system displayed average time  0 or 77400, the average time should a
 #### Test Cases 7 :  Validate software run multiple connection    
 Status: Passed    
    
-Scenario Tested: Ran ### Fill here on multiple command console.  
+Scenario Tested: Ran multiple command on applcation window.  
  
 Result : Verified all of the request returned  the result.
 
@@ -123,6 +123,8 @@ public page ClickSubmit()
            IWebElement item = Driver.FindElement(By.XPath("locator"));
             item.Click();
        }
+       
+  
 
 
 ```
