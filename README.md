@@ -26,7 +26,7 @@ Result: Applcation did not return correct base64 encoded password for correspond
              
 #### Test Case 4 - > Validate stat data should display on JSON format  
 Status:  Pass  
-Scenario Tested: Ran curl -H "application/json" http://127.0.0.1:8088/stats.        
+Scenario Tested: Ran curl http://127.0.0.1:8088/stats.        
 Result:  Verified stat data displayed on following JSON format {"TotalRequests":2,"AverageTime":}
 
 
@@ -34,12 +34,12 @@ Result:  Verified stat data displayed on following JSON format {"TotalRequests":
 #### Test Cases 5 : Validate application return correct JSON total hash request  
 Status : Pass
 
-Scenario Tested:  Ran url -X POST -H "application/json -d{"\password\":"\angrymon\"}"http://127.0.0.1:8088/hash two times got the job ID as  1 and 2. Ran curl -H "application/json" http://127.0.0.1:8088/stats  
+Scenario Tested:  Ran url -X POST -H "application/json -d{"\password\":"\angrymon\"}"http://127.0.0.1:8088/hash two times got the job ID as  1 and 2. Ran curl http://127.0.0.1:8088/stats 
    
 Result: The application gave correct total hash request since the server started.The result displayed as follow {"TotalRequests":2,"AverageTime":}  
 
 Scenario Tested: Closed the application and ran curl -X POST -H "application/json -d{"\password\":"\angrymon\"}"http://127.0.0.1:8088/hash one time got the job ID as 1.    
-Again ran curl -H "application/json" http://127.0.0.1:8088/stats 
+Again ran  curl http://127.0.0.1:8088/stats.
 
 Result: Verified result displayed as follow {"TotalRequests":1,"AverageTime":}    
 
@@ -50,7 +50,7 @@ Scenario Tested:  Opened exe file.
 Ran curl -X POST -H "application/json -d{"\password\":"\angrymon\"}"http://127.0.0.1:8088/hash    
 Again ran curl http://127.0.0.1:8088/stats
  
-Result: The system displayed wrong average time as 0 or 77400, the average time should around 54400.
+Result: The system displayed wrong average time as 0 or 447100, the average time should around 54400.
 
 
 
