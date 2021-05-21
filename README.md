@@ -23,7 +23,7 @@ Status : Fail
 Result: Applcation did not return correct base64 encoded password for corresponding SHA-512 hash.
 Password: angrymon
 ##### SHA-512  for angrymon: 02042e87833566bf5ff6300256e601dccafcc22f9de3fdadc960824b47f068639990e790a5e1e4c28c19bc94fb2647201f5a0f6ce0863ee5e3e5272fce62d7e5  
-##### Base64  for SHA- 512: MDIwNDJlODc4MzM1NjZiZjVmZjYzMDAyNTZlNjAxZGNjYWZjYzIyZjlkZTNmZGFkYzk2MDgyNGI0N2YwNjg2Mzk5OTBlNzkwYTVlMWU0YzI4YzE5YmM5NGZiMjY0NzIwMWY1YTBmNmNlMDg2M2VlNWUzZTUyNzJmY2U2MmQ3ZTU=
+##### Expected Result Base64  for SHA- 512: MDIwNDJlODc4MzM1NjZiZjVmZjYzMDAyNTZlNjAxZGNjYWZjYzIyZjlkZTNmZGFkYzk2MDgyNGI0N2YwNjg2Mzk5OTBlNzkwYTVlMWU0YzI4YzE5YmM5NGZiMjY0NzIwMWY1YTBmNmNlMDg2M2VlNWUzZTUyNzJmY2U2MmQ3ZTU=
 ##### Actual Result: AgQuh4M1Zr9f9jACVuYB3Mr8wi+d4/2tyWCCS0fwaGOZkOeQpeHkwowZvJT7JkcgH1oPbOCGPuXj5ScvzmLX5Q==
 
 
