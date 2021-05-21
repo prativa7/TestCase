@@ -56,7 +56,7 @@ Result: The system displayed average time 77400, the average time should around 
 #### Test Cases 7 :  Validate software run multiple connection    
 Status: Passed    
    
-Scenario Tested: Ran http://127.0.0.1:8088/hash on multiple command console.  
+Scenario Tested: Ran ### Fill here on multiple command console.  
  
 Result : Verified all of the request returned  the result.
 
@@ -82,7 +82,7 @@ Result :  When a both application ran together, post to hash returned the job id
 #### Test Case 10: Validate when user closes the application, software does not accept additional password request
 Status: Pass
  
-Scenario Tested:  Ran curl -X POST -d 'shutdown' http://127.0.0.1:8088/hash and entered  http://127.0.0.1:8088/stats on console window.    
+Scenario Tested:  Ran curl -X POST -d 'shutdown' http://127.0.0.1:8088/hash and entered curl http://127.0.0.1:8088/stats on console window.    
    
 Result: Verfied curl(n) Failed to connect to port 8088 displayed on the page and did not process the request.  
 
